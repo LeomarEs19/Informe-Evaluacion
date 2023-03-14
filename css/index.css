@@ -4,9 +4,19 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: 'Sono', sans-serif;
+	text-decoration: none;
+	list-style: none;
 }
 body{
 	background: #ffffff;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 h1{
@@ -18,78 +28,53 @@ h1{
     font-size: 3em;
 }
 
-header{
-	width: 100%;
-	height: 50px;
-	background-color: #251802;
-}
-.interior{
-	max-width: 100%;
-	padding: 0 10px;
-	margin: auto;
-}
-.logo{
-	float: left;
-	padding: 5px 20px 0;
-}
-.logo img{
-	height: 80px;
-}
-.logo img:hover{
-	transform: scale(1.1);
-}
-.navegacion{
-	float: right;
+.people {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	min-height: 50px;
-	z-index: 1000;
+	gap: 30px;
 }
-.navegacion ul{
-	list-style: none;
-	padding: 0 10px;
-}
-.navegacion ul li{
-	display: inline-block;
-	position: relative;
-	transition: .3s linear;
-	z-index: 1000;
-}
-.navegacion ul li:hover{
-	transform: scale(1.1);
-}
-.navegacion ul li a{
-	color: #ffffff;
-	text-align: center;;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding: 20px 30px;
-	transition: .3s linear;
-    font-size: 1.2em;
-}
-.navegacion ul li a:hover{
-	color: #e0ba0e;
-	transform: scale(1.1);
-}
-.navegacion ul li:hover .hijos{
-	display: block;
-}
-.navegacion .submenu .hijos{
-	display: none;
-	background: #251802;
-	position: fixed;
-	width: 120%;
-    
-}
-.navegacion .submenu .hijos li{
+
+.photo {
 	display: flex;
-    align-items: center;
-    flex-direction: column;
-	overflow: hidden;
-	border-bottom: none;
-    font-size: 0.8em;
+	flex-direction: column;
 }
-.navegacion .submenu .hijos li a{
-	display: block;
+
+.portada > p {
+	text-align: center;
+}
+
+.portada {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.introduccion {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 100px;
+	gap: 20px;
+}
+
+.introduccion > p {
+	text-align: justify;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+
+ul > li > a {
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 5px;
 
 }
