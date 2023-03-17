@@ -114,3 +114,17 @@ ul > li > details:hover > summary > i {
 	transform: rotate(90deg);
 	transition: .5s all;
 }
+
+/* sono-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Sono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/sono-v1-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/sono-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/sono-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/sono-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/sono-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/sono-v1-latin-regular.svg#Sono') format('svg'); /* Legacy iOS */
+  }
