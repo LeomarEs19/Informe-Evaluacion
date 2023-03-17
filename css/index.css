@@ -24,7 +24,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 3%;
+    margin: 3% auto;
     font-size: 3em;
 }
 
@@ -63,7 +63,7 @@ h1{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 100px;
+	padding: 0;
 	gap: 20px;
 }
 
@@ -127,4 +127,23 @@ ul > li > details:hover > summary > i {
 		 url('../fonts/sono-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
 		 url('../fonts/sono-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		 url('../fonts/sono-v1-latin-regular.svg#Sono') format('svg'); /* Legacy iOS */
-  }
+}
+
+@media (max-width: 425px) {
+	.portada > h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	ul > li {
+		width: 90%;
+	}
+
+	ul > li > details[open] {
+		width: 100%;
+	}
+
+	ul > li > details[open] > img {
+		width: 100%;
+	}
+}
