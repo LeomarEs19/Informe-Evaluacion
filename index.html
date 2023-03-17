@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informe De Evaluacion De Requerimiento</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
@@ -28,17 +28,57 @@
             <p>Ficha - 2692929</p>
             <p>ADSO</p>
         </div>
+        <hr>
         <div class="introduccion">
             <h2>Introducción</h2>
             <p>
-                En el siguiente informe se presentarán 4 mockups que formarán parte del aplicativo web llamado LinkCafé. Este aplicativo consiste en una pequeña wikipedia sobre café, que se enfoca en promover buenas prácticas y difundir información técnica y empírica, así como contar con un apartado de opinión similar a un foro.
+                El presente informe tiene como objetivo mostrar 4 mockups que formarán parte del aplicativo web llamado LinkCafé, el cual está enfocado en proporcionar información técnica y empírica sobre el café, además de promover buenas prácticas relacionadas con la producción, consumo y cultura del café. Este aplicativo contará con una sección de opinión, similar a un foro, donde los usuarios podrán compartir sus experiencias y conocimientos en torno a esta bebida. En resumen, LinkCafé busca convertirse en una pequeña wikipedia del café, que permita a los amantes de esta bebida acceder a información de calidad y fomentar una comunidad de intercambio y aprendizaje.
             </p>
         </div>
+        <hr>
         <ul>
-            <li><a href="./barra_nav.html">Barra de navegación</a></li>
+            <!-- <li><a href="./barra_nav.html">Barra de navegación</a></li>
             <li><a href="./pagina_principal.html">La página principal</a></li>
             <li><a href="./Perfil.html">El perfil de usuario</a></li>
-            <li><a href="./upload_publicaciones.html">Apartado para subir publicaciones</a></li>
+            <li><a href="./upload_publicaciones.html">Apartado para subir publicaciones</a></li> -->
+            <li>
+                <details>
+                    <summary><i class="fa-solid fa-arrow-right"></i> Barra de navegación</summary>
+                    <p><span>Objetivo del caso de prueba: </span> Barra de navegación funcional para que el usuario se pueda mover entre los distintos apartados</p>
+                    <p><span>Indentificador:</span> Barra de navegación</p>
+                    <p><span>Nombre del requerimiento o historia de usuario asociada: </span> Como usuario, quiero tener acceso a todas las secciones del sitio web desde una barra de navegación clara y fácil de usar.</p>
+                    <p><span>Precondiciones: </span> Está siempre visible para todos los usuarios</p>
+                    <p><span>Lista de pasos: </span> Observar la barra de navegación y verificar que todos los elementos son legibles y están organizados de manera lógica y hacer clic en cada elemento de la barra de navegación y verificar que se redirige correctamente a la sección correspondiente del sitio web. </p>
+                    <img src="./img/navbar.png" alt="" width="700">
+                </details>
+                <details>
+                    <summary><i class="fa-solid fa-arrow-right"></i> La página principal</summary>
+                    <p><span>Objetivo del caso de prueba: </span> Página principal en donde el usuario puede ver publiciones recientes y pueda reaccionar a ellas.</p>
+                    <p><span>Indentificador:</span> Página principal</p>
+                    <p><span>Nombre del requerimiento o historia de usuario asociada: </span> Como usuario, quiero que al iniciar sesión en el aplicativo me aparezca publiciones recientes por otros usuarios y puede reaccionar a ellas</p>
+                    <p><span>Precondiciones: </span> Está siempre visible para todos los usuarios</p>
+                    <p><span>Lista de pasos: </span> Observar la página principal y verificar que la información clave se muestra de manera clara y concisa y hacer clic en cada enlace en la página principal y verificar que se redirige correctamente a la sección correspondiente del sitio web.</p>
+                    <img src="./img/pagina_principal.png" alt="" width="700">
+                </details>
+                <details>
+                    <summary><i class="fa-solid fa-arrow-right"></i> Perfil de usuario</summary>
+                    <p><span>Objetivo del caso de prueba: </span> Verificar que un usuario pueda crear y actualizar su perfil de manera correcta.</p>
+                    <p><span>Indentificador:</span> Perfil de usuario</p>
+                    <p><span>Nombre del requerimiento o historia de usuario asociada: </span> Creación y actualización de perfiles de usuario.</p>
+                    <p><span>Precondiciones: </span> El usuario puede ver su perfil correctamente y puede editarlo a su gusto</p>
+                    <p><span>Lista de pasos: </span> Entrar al perfil del usuario, presionar en "editar" y cambiar la información que le parezca conveniente al usuario</p>
+                    <img src="./img/perfil.png" alt="" width="700">
+                </details>
+                <details>
+                    <summary><i class="fa-solid fa-arrow-right"></i> Apartado para subir publicaciones</summary>
+                    <p><span>Objetivo del caso de prueba: </span> Verificar que un usuario pueda subir una publicación en el apartado correspondiente de manera correcta.</p>
+                    <p><span>Indentificador:</span> Subir una publicación</p>
+                    <p><span>Nombre del requerimiento o historia de usuario asociada: </span> Subida de publicaciones tal como imagenes, videos o articulos con el fin de compartir opiniones</p>
+                    <p><span>Precondiciones: </span> El usuario pueda subir publiciones y que se vean reflejadas en su perfil o el de otros usuarios</p>
+                    <p><span>Lista de pasos: </span> El usuario hace clic en el botón "Subir publicación" en el menú principal, llena el formulario y le da en subir publicación.</p>
+                    <img src="./img/crear_publicacion.png" alt="" width="700">
+                </details>
+            </li>
         </ul>
     </div>
 </body>

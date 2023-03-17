@@ -79,9 +79,38 @@ ul {
 	gap: 50px;
 }
 
-ul > li > a {
-	padding: 10px;
-	border: 1px solid #000000;
-	border-radius: 5px;
+ul > li {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 50%;
+}
 
+ul > li > details {
+	padding: 15px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: auto;
+}
+
+ul > li > details > p, ul > li > details[open] > summary {
+	margin-bottom: 10px;
+}
+
+ul > li > details > p > span {
+	font-weight: bold;
+}
+
+ul > li > details:hover {
+	background: #202020;
+	color: white;
+	transition: 1s all;
+}
+
+ul > li > details:hover > summary > i {
+	transform: rotate(90deg);
+	transition: .5s all;
 }
